@@ -5,7 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.Experimental.XR;
 using System;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ARTapToPlaceObject : MonoBehaviour
 {
     public GameObject placementIndicator;
     private ARSessionOrigin arOrigin;
