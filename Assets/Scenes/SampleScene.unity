@@ -274,7 +274,7 @@ MonoBehaviour:
   m_PoseSource: 6
   m_PoseProviderComponent: {fileID: 0}
   m_TrackingType: 0
-  m_UpdateType: 0
+  m_UpdateType: 1
   m_UseRelativeTransform: 1
 --- !u!4 &646049800
 Transform:
@@ -319,6 +319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abdc4418f8727f245b61871f7ef74202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToPlace: {fileID: 336692825586089412, guid: 5a9c32f4b66c1074fac6ade7a34fa730,
+    type: 3}
   placementIndicator: {fileID: 1629560538}
 --- !u!4 &826523797
 Transform:
@@ -344,6 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428524942}
   - component: {fileID: 1428524941}
+  - component: {fileID: 1428524943}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -379,6 +382,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1428524943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428524940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlanePrefab: {fileID: 0}
+  m_DetectionFlags: -1
 --- !u!1 &1627690969
 GameObject:
   m_ObjectHideFlags: 0
