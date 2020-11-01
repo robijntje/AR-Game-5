@@ -7,6 +7,7 @@ using System;
 
 public class ARTapToPlaceObject : MonoBehaviour
 {
+    public GameObject objectToPlace;
     public GameObject placementIndicator;
     private ARSessionOrigin arOrigin;
     private Pose placementPose;
@@ -23,6 +24,16 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
+
+        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            PlaceObject();
+        }
+    }
+
+    private void PlaceObject()
+    {
+        Instantiate(objectToPlace, placementPose.position, placementPose.rotation);
     }
 
     private void UpdatePlacementIndicator()
